@@ -15,6 +15,7 @@ class Projects extends BaseModel
     @builds = @load 'ProjectBuilds'
     @pipelines = @load 'Pipelines'
     @runners = @load 'Runners'
+    @variables = @load 'ProjectVariables'
 
   all: (params={}, fn=null) =>
     if 'function' is typeof params
